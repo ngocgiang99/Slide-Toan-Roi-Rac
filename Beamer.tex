@@ -1,0 +1,218 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumerate}
+%%\usepackage{enumitem}
+\usepackage{subcaption}
+\graphicspath{ {Img/} }
+
+%%--------------------------------------------------------
+
+\title{Mutilobjective Evolutionary Optimization}
+\author{Taskoverflow}
+
+
+
+
+%%--------------------------------------------------------
+
+\begin{document}
+\maketitle 
+
+\section[Outline]{}
+\begin{frame}   
+    \tableofcontents
+\end{frame}
+
+
+%%---------------------------------------------------------
+
+    \section{INTRODUCTION}
+    \begin{frame}{INTRODUTION}
+        \begin{block}{Point 1}
+            Thế nào là bài toán tối ưu đa mục tiêu?
+        \end{block}
+    \end{frame}
+    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
+        \begin{block}{Mục tiêu 1}
+            Quãng đường
+        \end{block}
+        \begin{block}{Mục tiêu 2}
+            Thời gian
+        \end{block}
+    \end{frame}
+    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
+        \begin{itemize}
+            \item <1-> Với nhiêu liệu có trước, công sinh A sinh ra là cố định.
+            \item <2-> Thời gian t giảm khi vận tốc v tăng
+            \item <3-> Vận tốc v tăng thì lực cản tăng, công hao phí tăng 
+            \item <4-> Công hao phí tăng, quãng đường có thể đi được giảm
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Các định nghĩa cơ bản}
+        \begin{block}{Không gian nghiệm}
+            Với các điều kiện rằng buộc của $x$ sẽ xác định một không gian $\Omega \subset R^{n}$
+        \end{block}
+        \pause
+        \begin{block}{Hàm mục tiêu}
+            \left \{ \begin{array}{ll}
+                $y = f(x)= (f_{1}(x),...,f_{m}(x))$
+                \\ x \in \Omega 
+            \end{array} 
+            \right.
+        \end{block}
+        \pause
+        \begin{block}{Không gian mục tiêu}
+            $f : \Omega \to \Theta  \subset R^{m}$ xác định không gian mục tiêu $\Theta$
+        \end{block}
+    \end{frame}
+    \begin{frame}{Các định nghĩa cơ bản}
+        \begin{itemize}
+            \item <1-> Cho 2 nghiệm $x,y \in \Omega $, $x$ trội hơn $y$ nếu như $\forall i \in {1,2,...,m}, f_{i}(x) \leq f_{i}(y)$ và $\exist j \in {1,2,...,m}, f_{j}(x) < f_{j}(y)$. 
+            \item <2-> Một nghiệm $x^{*} \in \Omega$ là nghiệm tối ưu Pareto nếu không tồn tại $x \in \Omega$ trội hơn nó.
+            \item <3-> Tập hợp nghiệm tối ưu Pareto được gọi là tập Pareto.
+            \item <4-> Các vector mục tiêu tương ứng của tập Pareto được gọi là Biên Parato(PF)
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Mục tiêu tối ưu}
+        Mục tiêu tối ưu là đạt được một tập xấp xỉ S với tập biên Pareto thỏa mãn:
+        \pause
+        \begin{block}{Độ hội tụ}
+            Mọi nghiệm thuộc S là gần nhất có thể với P.
+            \end{block}
+        \pause
+        \begin{block}{Độ đa dạng}
+        Mọi nghiệm thuộc S phân bố đa dạng trên không gian mục tiêu
+        \end{block}
+    \end{frame}
+
+
+%%---------------------------------------------------------
+\section{\textbf{Các thuật toán}}
+\subsection{\textbf{Thuật toán NSGA-II}}
+    \begin{frame}
+    \frametitle{\textbf{Thuật toán NSGA-II}}
+        \begin{itemize}
+            \item<1-> Sau lần chạy thứ $ t $, duy trì một quần thể solution $ P_t $ có kích thước $ N $ cố định qua mọi lần chạy.
+            \item<2-> Trong lần chạy thứ $ t + 1 $:
+            \begin{enumerate}
+                \item<2-> Sử dụng các toán tử selection, crossover và mutation để tạo ra quần thể con cháu $ Q_t $ từ $ P_t $.
+                \item<2-> Chọn ra N phần tử tốt nhất từ $ P_t \cup Q_t $ để tạo ra $ P_{t + 1} $.
+            \end{enumerate}
+            \item<3-> Tính chất đặc trưng: Để đánh giá các solution trong bước (2), thuật toán sử dụng:
+            \begin{enumerate}
+                \item<3-> Sắp xếp bất thống trị (fast nondominated sorting) để chọn ra phần tử thống trị các phần tử khác.
+                \item<3-> khoảng cách quần thể (crowding distance) để đảm bảo sự đa dạng của quần thể.
+            \end{enumerate}
+            \item<4-> Độ phức tạp: $ O(mN^2) $ mỗi lần chạy, với $ m $ là số mục tiêu.
+        \end{itemize}
+    \end{frame}
+
+%%---------------------------------------------------------    
+
+\subsection{\textbf{Thuật toán MOEA/D}}
+    \begin{frame}
+    \frametitle{\textbf{Thuật toán MOEA/D}}
+        \begin{itemize} 
+            \item<1-> Khởi tạo một quần thể gồm $ N $ cá thể. Mỗi cá thể gồm $ \lambda_{i} $ được khởi tạo ngẫu nhiên.
+                    $ B(i) $ chứa $ T $ chỉ số cá thể hàng xóm có khoảng các Euclid theo $ \lambda $ gần với i nhất
+            \item<2-> Sau mỗi lần chạy duy trì một một tập quần thể $ EP $ (External Population) để lưu
+                    lại các cá thể tốt nhất tính đến hiện tại
+            
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+    \frametitle{\textbf{Thuật toán MOEA/D}} 
+        \begin{itemize}
+            \item<1-> Trong lần chạy thứ $ t $ :
+            \item<2-> Duyệt $ \forall $ i :
+            \begin{enumerate}
+                \item<2-> Chọn 2 chỉ số ngẫu nhiên $ k $, $ l $ từ trong các hàng xóm của $ i $
+                \item<2-> Dùng các toán tử crossover, mutation để tạo ra cá thể con cháu
+                \item<2-> Nếu cá thể con cháu vi phạm ràng buộc thì dùng một thuật toán sửa chữa để tạo thành một
+                cá thể con cháu mới thỏa mãn ràng buộc
+                \item<3-> So sánh cá thể con cháu với các hàng xóm của $ i $. 
+                \item<3-> So sánh với các cá thể trong $ EP $.
+            \end{enumerate}
+            \item<4-> Độ phức tạp: $ O(mNT) $
+        \end{itemize}
+    \end{frame}
+
+%%------------------------------------------------------------------    
+
+    \begin{frame}
+    \frametitle{\textbf{Thực nghiệm: Bài toán ZTD3}}
+        \begin{itemize}
+            \item Hàm mục tiêu:
+            \begin{itemize}
+                \item $ f_1(x) = x_1 $
+                \item $ f_2(x) = g(x) \left[ 1 - \left( \dfrac{f_1(x)}{g(x)} \right)^2 \right] $, với
+                $$ g(x) = 1 +\dfrac{9 \left( \sum\limits_{i = 2}^n x_i \right)}{(n - 1)} $$
+            \end{itemize}
+            \item Miền tìm kiếm: $ x = (x_1, ..., x_n)^T \in \left[0, 1\right]^T $.
+            \item Biên Parento: Không liên tục, lồi.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame} 
+    \frametitle{\textbf{Thực nghiệm: Bài toán ZTD3}}
+        \begin{figure}[!h]
+            \center
+            \includegraphics[width=0.6\linewidth]{zdt3-pf}
+            \caption{Nguồn: ResearchGate}
+        \end{figure}
+
+    \end{frame}
+
+%%-------------------------------------------------------
+    
+    \begin{frame}
+    \frametitle{\textbf{So sánh giữa NSGA-II và MOEA/D}}
+        \begin{itemize}[label={}]
+        \begin{itemize}
+            \item<1-> Độ phức tạp mỗi lần chạy của MOEA/D nhỏ hơn NSGA-II.
+            \item<2-> NSGA-II chỉ cần một hệ số ngoài là mật độ đột biến (mutation rate) khi chạy thuật toán.
+            \item<3-> NSGA-II hội tụ tới biên Parento nhanh hơn.
+            \item<4-> NSGA-II đảm bảo kích cỡ quần thể cố định $\implies$ dễ quản lý và lưu trữ hơn.
+        \end{itemize}
+        \item<5-> \textbf{Tại sao lại phải nghiên cứu và sử dụng MOEA/D?}
+        \end{itemize}
+    \end{frame}
+
+%%---------------------------------------------------------
+
+    \section{Các bài toán nhiều mục tiêu}
+    \begin{frame}{MANY OBJECTIVE PROBLEM (MoAPs)}
+        \begin{itemize}
+            \item <1-> Không có định nghĩa chung cho MaOPs
+            \item <2-> Động lực chính đằng sau MaOPs là làm nổi bật những thách thức đặt ra bởi một số lượng lớn các mục tiêu cho các thuật toán tiến hóa đa mục tiêu (MOEAs) hiện tại
+            \item <3-> Hiện tại ta có thể định nghĩa MaOPs là các bài toán đa mục tiêu MOPs với $m \geq 4$
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{KHÓ KHĂN}
+    {Các khó khăn trong quá trình giải quyết các bài toán nhiều mục tiêu (Many Objectives)}
+        \begin{itemize}
+            \item <1-> Phần lớn các cá thể là không trội, không thể sắp xếp được
+            \item <2-> Tính toán độ đa dạng thuật toán trở nên khó khăn
+            \item <3-> Quá trình tái tổ hợp có thể không hiệu quả
+            \item <4-> Việc thể hiện sự trade-off surface khó khăn
+            \item <5-> Tốn thời gian để so sánh hiệu suất giữa các thuật toán với nhau (Performance metrics)
+            \item <6-> Rất khó để biểu diễn lời giải một cách trực quan
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Hai ý tưởng cho Many Objective EMO}
+        \begin{block}{1.}
+            Sử dụng nguyên tắc trội đặc biệt:$\Epsilon$-domination, mating restriction scheme or special recombination scheme (SBX với large distribution index,…)
+        \end{block}
+        \pause
+        \begin{block}{2.}
+            Sử dụng nền tảng của các nghiên cứu đa mục tiêu trước
+        \end{block}
+    \end{frame}
+
+\end{document}
