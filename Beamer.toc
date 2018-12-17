@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 \beamer@sectionintoc {2}{INTRODUCTION}{3}{0}{1}
 \beamer@sectionintoc {3}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{19}{0}{2}
 \beamer@subsectionintoc {3}{1}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{19}{0}{2}
 \beamer@subsectionintoc {3}{2}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{25}{0}{2}
 \beamer@sectionintoc {4}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{40}{0}{3}
+=======
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{22}{0}{2}
+\beamer@sectionintoc {3}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{35}{0}{3}
+>>>>>>> b1262b97e2ce112d0ac9ac780c3fa10096f33a28
