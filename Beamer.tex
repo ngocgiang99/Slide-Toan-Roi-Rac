@@ -106,10 +106,10 @@
     \begin{frame}
     \frametitle{\textbf{Các đặc tính}}
         \begin{itemize}
-            \item<1-> \textbf{Độ hội tụ:} NSGA-II sử dụng fast nondominated sorting
-            để sắp xếp lại các cá thể sau đó ưu tiên chọn các cá thể ít bị thống trị nhất
-            \item<2-> \textbf{Độ đa dạng:} NSGA-II sử dụng crowding distance để tính tổng khoảng 
-            cách giữa các cá thể trên các mục tiêu của bài toán sau đó chọn ra các cá thể cách nhau 
+            \item<1-> \textbf{Độ hội tụ:} NSGA-II sử dụng Fast nondominated sorting để sắp xếp lại các 
+            cá thể trong $ P_t \cup Q_t $, sau đó ưu tiên giữ lại các cá thể ít bị thống trị nhất.
+            \item<2-> \textbf{Độ đa dạng:} NSGA-II sử dụng Crowding distance để tính tổng khoảng 
+            cách giữa các cá thể theo từng mục tiêu của bài toán, sau đó chọn ra các cá thể cách nhau 
             xa nhất. Như vậy các cá thể được chọn sẽ trải đều trên tập.
         \end{itemize}
     \end{frame}
@@ -148,12 +148,11 @@
     \begin{frame}
     \frametitle{\textbf{Các đặc tính}}
         \begin{itemize}
-            \item<1-> \textbf{Độ hội tụ:} sử dụng một hàm hội tủ (Agression function)
+            \item<1-> \textbf{Độ hội tụ:} MOEA/D sử dụng một hàm hội tụ (Agression function)
             để so sánh giữa cá thể con cháu sinh ra và các hàm xóm của nó.
             \item<2-> \textbf{Độ đa dạng:} Bằng việc sinh ra con cháu từ việc chọn ngẫu
-            nhiên đời cha là 2 hàng xóm đã đảm bảo độ đa dạng của đời con cháu.
+            nhiên từ đời cha là 2 hàng xóm, độ đa dạng của đời con cháu được đảm bảo.
         \end{itemize}
-
     \end{frame}
 
 %%------------------------------------------------------------------    
