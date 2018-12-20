@@ -24,60 +24,117 @@
 
 %%---------------------------------------------------------
 
-    \section{Introduction}
-    \begin{frame}{Introduction}
-        \begin{block}{Định nghĩa}
+    \section{INTRODUCTION}
+    \begin{frame}{INTRODUTION}
+        \begin{block}{Point 1}
             Thế nào là bài toán tối ưu đa mục tiêu?
         \end{block}
     \end{frame}
-    
+    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
+        \begin{block}{Mục tiêu 1}
+            Quãng đường
+        \end{block}
+        \begin{block}{Mục tiêu 2}
+            Thời gian
+        \end{block}
+    \end{frame}
     \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
         \begin{itemize}
-            \item Mục tiêu 1: Quãng đường
-            \item Mục tiêu 2: Thời gian
+            \item <1-> Với nhiêu liệu có trước, công sinh A sinh ra là cố định.
+            \item <2-> Thời gian t giảm khi vận tốc v tăng
+            \item <3-> Vận tốc v tăng thì lực cản tăng, công hao phí tăng 
+            \item <4-> Công hao phí tăng, quãng đường có thể đi được giảm
         \end{itemize}
     \end{frame}
-
-    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
-        \begin{itemize}
-            \item <1-> Với nhiêu liệu có trước, công sinh $A$ sinh ra là cố định.
-            \item <2-> Thời gian $t$ giảm khi vận tốc $v$ tăng.
-            \item <3-> Vận tốc $v$ tăng thì lực cản tăng, công hao phí tăng. 
-            \item <4-> Công hao phí tăng, quãng đường có thể đi được giảm.
-        \end{itemize}
-    \end{frame}
-
     \begin{frame}{Các định nghĩa cơ bản}
-        \begin{itemize}
-            \item <1-> \textbf{Không gian nghiệm:} Với các điều kiện rằng buộc của $ x $ sẽ xác định một không gian $ \Omega \subset R^{n} $
-            \item <2-> \textbf{Hàm mục tiêu:} \\
-                \begin{cases}
-                    $ y = f(x)= (f_{1}(x),... ,f_{m}(x)) $ \\
-                    $ x \in \Omega $
-                \end{cases} 
-            \item <3-> \textbf{Không gian mục tiêu:} $ f: \Omega \to \Theta  \subset R^{m} $ xác định không gian mục tiêu $ \Theta $
-        \end{itemize}
+        \begin{block}{Không gian nghiệm}
+            Với các điều kiện rằng buộc của $x$ sẽ xác định một không gian $\Omega \subset R^{n}$
+        \end{block}
+        \pause
+        \begin{block}{Hàm mục tiêu}
+                $y = f(x)= (f_{1}(x),...,f_{m}(x))$
+                \\$ x \in \Omega $
+        \end{block}
+        \pause
+        \begin{block}{Không gian mục tiêu}
+            $f : \Omega \to \Theta  \subset R^{m}$ xác định không gian mục tiêu $\Theta$
+        \end{block}
     \end{frame}
-
+    \begin{frame}{Hình ảnh minh họa}
+        \begin{figure}
+        \includegraphics[scale = 0.6]{paretofront.jpg}
+        \caption{Nguồn: Science Direct}
+        \end{figure}
+    \end{frame}
     \begin{frame}{Các định nghĩa cơ bản}
-        \begin{itemize}
-            \item <1-> Cho 2 nghiệm $x, y \in \Omega $, $x$ trội hơn $y$ nếu như $\forall i \in {1,2,...,m}, f_{i}(x) \leq f_{i}(y)$ và $ \exists j \in {1,2,...,m}, f_{j}(x) < f_{j}(y)$. 
-            \item <2-> Một nghiệm $x^{*} \in \Omega$ là nghiệm tối ưu Pareto nếu không tồn tại $x \in \Omega$ trội hơn nó.
-            \item <3-> Tập hợp nghiệm tối ưu Pareto được gọi là tập Pareto.
-            \item <4-> Các vector mục tiêu tương ứng của tập Pareto được gọi là Biên Pareto (PF).
-        \end{itemize}
+        \begin{columns}
+        \column{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale = 0.5]{paretofront.jpg}
+            \caption{Hình ảnh minh họa}
+            \label{fig:my_label}
+        \end{figure}
+        \column{0.4\textwidth}
+        \pause
+        Cho 2 nghiệm $x,y \in \Omega $, $x$ trội hơn $y$ nếu như $\forall i \in {1,2,...,m}, f_{i}(x) \leq f_{i}(y)$ và $ \exists j \in {1,2,...,m}, f_{j}(x) < f_{j}(y)$. 
+        \end{columns}
     \end{frame}
-
+    \begin{frame}{Các định nghĩa cơ bản}
+        \begin{columns}
+        \column{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale = 0.5]{paretofront.jpg}
+            \caption{Hình ảnh minh họa}
+            \label{fig:my_label}
+        \end{figure}
+        \column{0.4\textwidth}
+        Một nghiệm $x^{*} \in \Omega$ là nghiệm tối ưu Pareto nếu không tồn tại $x \in \Omega$ trội hơn nó
+        \end{columns}
+    \end{frame}
+    \begin{frame}{Các định nghĩa cơ bản}
+        \begin{columns}
+        \column{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale = 0.5]{paretofront.jpg}
+            \caption{Hình ảnh minh họa}
+            \label{fig:my_label}
+        \end{figure}
+        \column{0.4\textwidth}
+        Tập hợp nghiệm tối ưu Pareto được gọi là tập Pareto.
+        \end{columns}
+    \end{frame}
+    \begin{frame}{Các định nghĩa cơ bản}
+        \begin{columns}
+        \column{0.6\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale = 0.5]{paretofront.jpg}
+            \caption{Hình ảnh minh họa}
+            \label{fig:my_label}
+        \end{figure}
+        \column{0.4\textwidth}
+        Các vector mục tiêu tương ứng của tập Pareto được gọi là Biên Parato(PF).
+        \end{columns}
+    \end{frame}
     \begin{frame}{Mục tiêu tối ưu}
-        Mục tiêu tối ưu là đạt được một tập xấp xỉ $S$ với tập biên Pareto thỏa mãn:
+        Mục tiêu tối ưu là đạt được một tập xấp xỉ S với tập biên Pareto thỏa mãn:
         \pause
         \begin{block}{Độ hội tụ}
-            Mọi nghiệm thuộc $S$ là gần nhất có thể với $P$.
-        \end{block}
+            Mọi nghiệm thuộc S là gần nhất có thể với P.
+            \end{block}
         \pause
         \begin{block}{Độ đa dạng}
-            Mọi nghiệm thuộc $S$ phân bố đa dạng trên không gian mục tiêu.
+        Mọi nghiệm thuộc S phân bố đa dạng trên không gian mục tiêu
         \end{block}
+    \end{frame}
+    \begin{frame}{Hình ảnh minh họa}
+        \begin{figure}
+        \includegraphics[scale = 0.6]{paretofront.jpg}
+        \caption{Nguồn: Science Direct}
+        \end{figure}
     \end{frame}
 
 %%---------------------------------------------------------

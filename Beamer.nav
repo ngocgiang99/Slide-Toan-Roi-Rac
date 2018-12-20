@@ -2,7 +2,7 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
+\headcommand {\sectionentry {1}{INTRODUCTION}{2}{INTRODUCTION}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
@@ -11,44 +11,54 @@
 \headcommand {\beamer@framepages {4}{7}}
 \headcommand {\slideentry {1}{0}{4}{8/10}{}{0}}
 \headcommand {\beamer@framepages {8}{10}}
-\headcommand {\slideentry {1}{0}{5}{11/14}{}{0}}
-\headcommand {\beamer@framepages {11}{14}}
-\headcommand {\slideentry {1}{0}{6}{15/17}{}{0}}
-\headcommand {\beamer@framepages {15}{17}}
-\headcommand {\beamer@sectionpages {2}{17}}
-\headcommand {\beamer@subsectionpages {2}{17}}
-\headcommand {\sectionentry {2}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{18}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{0}}
-\headcommand {\beamer@subsectionpages {18}{17}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{18}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}}
-\headcommand {\slideentry {2}{1}{1}{18/21}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{0}}
-\headcommand {\beamer@framepages {18}{21}}
-\headcommand {\slideentry {2}{1}{2}{22/23}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{0}}
-\headcommand {\beamer@framepages {22}{23}}
-\headcommand {\beamer@subsectionpages {18}{23}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{24}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}}
-\headcommand {\slideentry {2}{2}{1}{24/25}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {24}{25}}
-\headcommand {\slideentry {2}{2}{2}{26/29}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {26}{29}}
-\headcommand {\slideentry {2}{2}{3}{30/31}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {30}{31}}
-\headcommand {\slideentry {2}{2}{4}{32/32}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {2}{2}{5}{33/33}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {2}{2}{6}{34/38}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
-\headcommand {\beamer@framepages {34}{38}}
-\headcommand {\beamer@sectionpages {18}{38}}
-\headcommand {\beamer@subsectionpages {24}{38}}
-\headcommand {\sectionentry {3}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{39}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{0}}
-\headcommand {\slideentry {3}{0}{1}{39/41}{}{0}}
-\headcommand {\beamer@framepages {39}{41}}
-\headcommand {\slideentry {3}{0}{2}{42/47}{}{0}}
-\headcommand {\beamer@framepages {42}{47}}
-\headcommand {\slideentry {3}{0}{3}{48/49}{}{0}}
-\headcommand {\beamer@framepages {48}{49}}
-\headcommand {\beamer@partpages {1}{49}}
-\headcommand {\beamer@subsectionpages {39}{49}}
-\headcommand {\beamer@sectionpages {39}{49}}
-\headcommand {\beamer@documentpages {49}}
-\headcommand {\gdef \inserttotalframenumber {18}}
+\headcommand {\slideentry {1}{0}{5}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {1}{0}{6}{12/13}{}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {1}{0}{7}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{0}{8}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {1}{0}{9}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {1}{0}{10}{17/19}{}{0}}
+\headcommand {\beamer@framepages {17}{19}}
+\headcommand {\slideentry {1}{0}{11}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@sectionpages {2}{20}}
+\headcommand {\beamer@subsectionpages {2}{20}}
+\headcommand {\sectionentry {2}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{21}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{0}}
+\headcommand {\beamer@subsectionpages {21}{20}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{21}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}}
+\headcommand {\slideentry {2}{1}{1}{21/24}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{0}}
+\headcommand {\beamer@framepages {21}{24}}
+\headcommand {\slideentry {2}{1}{2}{25/26}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\beamer@subsectionpages {21}{26}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{27}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}}
+\headcommand {\slideentry {2}{2}{1}{27/28}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\slideentry {2}{2}{2}{29/32}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {29}{32}}
+\headcommand {\slideentry {2}{2}{3}{33/34}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {33}{34}}
+\headcommand {\slideentry {2}{2}{4}{35/35}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {2}{2}{5}{36/36}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {2}{2}{6}{37/41}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{0}}
+\headcommand {\beamer@framepages {37}{41}}
+\headcommand {\beamer@sectionpages {21}{41}}
+\headcommand {\beamer@subsectionpages {27}{41}}
+\headcommand {\sectionentry {3}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{42}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{0}}
+\headcommand {\slideentry {3}{0}{1}{42/44}{}{0}}
+\headcommand {\beamer@framepages {42}{44}}
+\headcommand {\slideentry {3}{0}{2}{45/50}{}{0}}
+\headcommand {\beamer@framepages {45}{50}}
+\headcommand {\slideentry {3}{0}{3}{51/52}{}{0}}
+\headcommand {\beamer@framepages {51}{52}}
+\headcommand {\beamer@partpages {1}{52}}
+\headcommand {\beamer@subsectionpages {42}{52}}
+\headcommand {\beamer@sectionpages {42}{52}}
+\headcommand {\beamer@documentpages {52}}
+\headcommand {\gdef \inserttotalframenumber {23}}
