@@ -30,22 +30,7 @@
             Thế nào là bài toán tối ưu đa mục tiêu?
         \end{block}
     \end{frame}
-    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
-        \begin{block}{Mục tiêu 1}
-            Quãng đường
-        \end{block}
-        \begin{block}{Mục tiêu 2}
-            Thời gian
-        \end{block}
-    \end{frame}
-    \begin{frame}{Bài toán tối ưu đa mục tiêu trong thực tế}
-        \begin{itemize}
-            \item <1-> Với nhiêu liệu có trước, công sinh A sinh ra là cố định.
-            \item <2-> Thời gian t giảm khi vận tốc v tăng
-            \item <3-> Vận tốc v tăng thì lực cản tăng, công hao phí tăng 
-            \item <4-> Công hao phí tăng, quãng đường có thể đi được giảm
-        \end{itemize}
-    \end{frame}
+    
     \begin{frame}{Các định nghĩa cơ bản}
         \begin{block}{Không gian nghiệm}
             Với các điều kiện rằng buộc của $x$ sẽ xác định một không gian $\Omega \subset R^{n}$
@@ -60,6 +45,7 @@
             $f : \Omega \to \Theta  \subset R^{m}$ xác định không gian mục tiêu $\Theta$
         \end{block}
     \end{frame}
+
     \begin{frame}{Hình ảnh minh họa}
         \begin{figure}
         \includegraphics[scale = 0.6]{paretofront.jpg}
@@ -90,7 +76,7 @@
             \label{fig:my_label}
         \end{figure}
         \column{0.4\textwidth}
-        Một nghiệm $x^{*} \in \Omega$ là nghiệm tối ưu Pareto nếu không tồn tại $x \in \Omega$ trội hơn nó
+        Một nghiệm $x^{*} \in \Omega$ là nghiệm tối ưu Pareto nếu không tồn tại $x \in \Omega$ trội hơn nó.
         \end{columns}
     \end{frame}
     \begin{frame}{Các định nghĩa cơ bản}
@@ -116,7 +102,7 @@
             \label{fig:my_label}
         \end{figure}
         \column{0.4\textwidth}
-        Các vector mục tiêu tương ứng của tập Pareto được gọi là Biên Parato(PF).
+        Các vector mục tiêu tương ứng của tập Pareto được gọi là Biên Pareto (Pareto Frontier - PF).
         \end{columns}
     \end{frame}
     \begin{frame}{Mục tiêu tối ưu}
@@ -178,8 +164,8 @@
     \begin{frame}
     \frametitle{\textbf{Thuật toán MOEA/D}}
         \begin{itemize} 
-            \item<1-> Khởi tạo một quần thể gồm $ N $ cá thể. Mỗi cá thể gồm $ \lambda_{i} $ được khởi tạo ngẫu nhiên.
-                    $ B(i) $ chứa $ T $ chỉ số cá thể hàng xóm có khoảng các Euclid theo $ \lambda $ gần với i nhất.
+            \item<1-> Khởi tạo một quần thể gồm $ N $ cá thể. Mỗi cá thể có vector $ \lambda_{i} $ được khởi tạo ngẫu nhiên và
+                    mảng $ B(i) $ chứa $ T $ chỉ số cá thể hàng xóm có khoảng các Euclid theo $ \lambda $ gần với i nhất.
             \item<2-> Sau mỗi lần chạy duy trì một một tập quần thể $ EP $ (External Population) để lưu
                     lại các cá thể tốt nhất tính đến hiện tại.
         \end{itemize}

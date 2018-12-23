@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{INTRODUCTION}{2}{0}{1}
-\beamer@sectionintoc {2}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{21}{0}{2}
-\beamer@subsectionintoc {2}{1}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{21}{0}{2}
-\beamer@subsectionintoc {2}{2}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{27}{0}{2}
-\beamer@sectionintoc {3}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{42}{0}{3}
+\beamer@sectionintoc {2}{\textbf {C\IeC {\'a}c thu\IeC {\d \acircumflex }t to\IeC {\'a}n}}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n NSGA-II}}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{\textbf {Thu\IeC {\d \acircumflex }t to\IeC {\'a}n MOEA/D}}{22}{0}{2}
+\beamer@sectionintoc {3}{C\IeC {\'a}c b\IeC {\`a}i to\IeC {\'a}n nhi\IeC {\`\ecircumflex }u m\IeC {\d u}c ti\IeC {\^e}u}{37}{0}{3}
